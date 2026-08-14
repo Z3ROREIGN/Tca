@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{const links=[...document.querySelectorAll('.menu a')];const path=location.pathname.split('/').pop()||'index.html';links.forEach(a=>{if(a.getAttribute('href')===path)a.classList.add('active')});document.querySelectorAll('[data-scroll]').forEach(el=>el.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'})));});
